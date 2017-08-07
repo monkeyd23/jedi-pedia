@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Qui Gon Jin",
+    "rank":"Jedi Master",
+    "trainedBy":"Count Doku",
+    "species":"Human",
+    "bio":"The Jedi who discovered Anakin Skywalker and determined that he was the Chosen One who would bring balance to the Force.",
+    "photoUrl": "/profiles/qui-gon-jin.jpg"
+  },
+  {
+    "name": "Obi Wan Kenobi",
+    "rank":"Jedi Master",
+    "trainedBy":"Qui Gon Jin",
+    "species":"Human",
+    "bio":"The mentor to Anakin Skywalker and, years later, Anakin's son Luke. Served as a general in the Clone Wars before going into hiding as one of the only survivors of Order 66.",
+    "photoUrl": "/profiles/obi-wan-kenobi.jpg"
+  },
+  {
+    "name": "Anakin Skywalker",
+    "rank":"Jedi Knight",
+    "trainedBy":"Obi-Wan Kenobi",
+    "species":"Human",
+    "bio":"The boy immaculately conceived via midi-chlorians who grew up to become a great Jedi, only to be seduced by the Dark Side, assist in the decimation of the Order, and become the hated Sith Lord Darth Vader.",
+    "photoUrl": "/profiles/anakin-skywalker.jpg"
+  },
+  {
+    "name": "Quinlan Vos",
+    "rank":"Jedi Master",
+    "trainedBy":"Anakin Skywalker",
+    "species":"Human/Kiffar",
+    "bio":"Renowned for his ability to read the memories of others and use them as a tracker. Often took on covert missions for the Jedi, including an (unsuccessful) attempt with Asajj Ventress to assassinate Count Dooku.",
+    "photoUrl": "/profiles/quinlan-vos.jpg"
+  },
+  {
+    "name": "Yoda",
+    "rank":"Grand Master",
+    "trainedBy":"Unknown",
+    "species":"Unknown",
+    "bio":"The 900-year-old Jedi Master who led the Order in its final days and, decades later while in hiding on Dagobah, trained Luke Skywalker to carry on the traditions of the Jedi.",
+    "photoUrl": "/profiles/yoda.jpg"
+  },
+  {
+    "name": "Mace Windu",
+    "rank":"Jedi Master",
+    "trainedBy":"Unknown",
+    "species":"Human",
+    "bio":"The most senior member of the Jedi Council, aside from Yoda, during the Clone Wars. In later years, Imperial propaganda claimed Mace Windu had been the leader of a “criminal gang” who caused the start of the wars.",
+    "photoUrl": "/profiles/mace-windu.jpg"
+  },
+  {
+    "name": "Ki Adi Mundi",
+    "rank":"Jedi Master",
+    "trainedBy":"Unknown",
+    "species":"Cerean",
+    "bio":"A member of the Jedi Council and a general in the Clone Wars, Ki-Adi-Mundi was gunned down by his own Clone Troopers on the Outer Rim planet Mygeeto when Order 66 was put into effect.",
+    "photoUrl": "/profiles/ki-adi-mundi.jpg"
+  },
+  {
+    "name": "Plo Koon",
+    "rank":"Jedi Master",
+    "trainedBy":"Unknown",
+    "species":"Kel Dor",
+    "bio":"Plo Koon first discovered the Force-sensitive child Ahsoka Tano, who would eventually become Anakin Skywalker’s Padawan. This Council member required a mask when in oxygen atmospheres due to his Kel Dor physiology.",
+    "photoUrl": "/profiles/plo-koon.jpg"
+  },
+  {
+    "name": "Kit Fisto",
+    "rank":"Jedi Master",
+    "trainedBy":"Unknown",
+    "species":"Nautolan",
+    "bio":"The amphibious Kit Fisto was a member of the Jedi Council who was able to fight the Clone Wars on worlds both dry and watery. He was killed by Darth Sidious on the night of the Jedi Purge.",
+    "photoUrl": "/profiles/kit-fisto.jpg"
+  },
+  {
+    "name": "Shak Ti",
+    "rank":"Jedi Master",
+    "trainedBy":"Unknown",
+    "species":"Togruta",
+    "bio":"A Council member and general during the wars, Shaak Ti also oversaw the training of the Clone Troopers on Kamino for a time. Shaak Ti and Ahsoka Tano hail from the same homeworld of Shili.",
+    "photoUrl": "/profiles/shak-ti.jpg"
+  }
+]

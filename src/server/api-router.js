@@ -16,24 +16,24 @@ function apiRouter (database) {
             return res.status(401).json({error: err.message});
     });
 
-    router.get('/contacts', (req, res) => {
-        const contactsCollection = database.collection('contacts');
-        contactsCollection.find({}).toArray( (err, docs) => {
+    router.get('/jedis', (req, res) => {
+        const jedisCollection = database.collection('jedis');
+        jedisCollection.find({}).toArray( (err, docs) => {
             if (err)
                 return res.status(500).json({"error" : err});
             return res.status(200).json(docs);
         });
     });
 
-    router.post('/contacts', (req, res) => {
-        const user = req.body;
-        const contactsCollection = database.collection('contacts');
-        contactsCollection.insertOne(user, (err, records) => {
+    router.post('/jedis', (req, res) => {
+        const jedi = req.body;
+        const jedisCollection = database.collection('jedis');
+        jedisCollection.insertOne(jedi, (err, records) => {
             if (err)
                 return res.status(500).json({error: err});
 
-            const newUser = records.ops[0];
-            return res.status(201).json(newUser);
+            const newJedi = records.ops[0];
+            return res.status(201).json(newJedi);
         });
     });
 

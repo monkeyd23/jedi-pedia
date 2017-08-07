@@ -1,24 +1,24 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ContactListComponent } from './contact-list/contact-list.component';
-import { AddContactComponent } from './add-contact/add-contact.component';
+import { JediListComponent } from './jedi-list/jedi-list.component';
+import { AddJediComponent } from './add-jedi/add-jedi.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'contacts',
+    redirectTo: 'jedis',
     pathMatch: 'full'
   },
   {
-    path: 'contacts',
-    component: ContactListComponent,
+    path: 'jedis',
+    component: JediListComponent,
     canActivate: [AuthGuard]
   },
   {
     path: 'new',
-    component: AddContactComponent,
+    component: AddJediComponent,
     canActivate: [AuthGuard]
   },
   {
@@ -26,7 +26,7 @@ const routes: Routes = [
     component: LoginComponent
   },{
     path: '**',
-    redirectTo: 'contacts'
+    redirectTo: 'jedis'
   }
 ];
 

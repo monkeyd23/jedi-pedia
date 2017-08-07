@@ -1,7 +1,7 @@
 <div class="ui menu header">
   <div class="ui container">
     <div class="item">
-      <a [routerLink]="['/contacts']" aria-label="Contacts">
+      <a [routerLink]="['/jedis']" aria-label="Jedis">
         <i class="icon users large blue"></i>
       </a>
     </div>
@@ -11,7 +11,7 @@
     <div class="item" *ngIf="authService.isLoggedIn()">
       <button [routerLink]="['/new']" class="ui basic button">
         <i class="add user icon" aria-hidden="true"></i>
-        Add Contact
+        Add Jedi
       </button>
     </div>
     <div class="right menu" *ngIf="authService.isLoggedIn()">
