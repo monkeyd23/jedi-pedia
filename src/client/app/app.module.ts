@@ -16,6 +16,7 @@ import { AuthGuard } from './auth.guard';
 import { JediDetailComponent } from './jedi-detail/jedi-detail.component';
 import { EditJediComponent } from './edit-jedi/edit-jedi.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ForbiddenValidatorDirective } from './directives/forbidden-name.directive';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AddJediComponent,
     LoginComponent,
     JediDetailComponent,
-    EditJediComponent
+    EditJediComponent,
+    ForbiddenValidatorDirective
   ],
   imports: [
     BrowserModule,

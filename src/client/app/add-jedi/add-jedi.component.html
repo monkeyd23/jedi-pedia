@@ -11,37 +11,48 @@
 
 
   <form class="ui big form" #jediForm="ngForm" (submit)="onSubmit(jediForm)" [class.loading]="loading">
-      <div class="field">
-        <label>Name</label>
-        <input type="text" placeholder="Jedi Name" name="name" ngModel/>
+    <div class="field">
+      <label>Name</label>
+      <input type="text" placeholder="Jedi Name" required minlength="3" forbiddenName="jedi" name="name" ngModel #name="ngModel"/>
+    </div>
+    <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+      <div *ngIf="name.errors.required">
+        Name is required.
       </div>
-
-      <div class="field">
-        <label>Rank</label>
-        <input type="text" placeholder="Rank" name="rank" ngModel/>
+      <div *ngIf="name.errors.minlength">
+        Name must be at least 3 characters long.
       </div>
-
-      <div class="field">
-        <label>Trained By</label>
-        <input type="text" placeholder="Trained By" name="trainedBy" ngModel/>
+      <div *ngIf="name.errors.forbiddenName">
+        Name cannot be Jedi.
       </div>
+    </div>
 
-      <div class="field">
-        <label>Species</label>
-        <input type="text" placeholder="Species" name="species" ngModel/>
-      </div>
+    <div class="field">
+      <label>Rank</label>
+      <input type="text" placeholder="Rank" name="rank" ngModel/>
+    </div>
 
-      <div class="field">
-        <label>Bio</label>
-        <textarea rows="4" cols="50" type="text" placeholder="Bio" name="bio" ngModel></textarea>
-      </div>
+    <div class="field">
+      <label>Trained By</label>
+      <input type="text" placeholder="Trained By" name="trainedBy" ngModel/>
+    </div>
 
-      <div class="field">
-        <label>Photo Url</label>
-        <input type="text" placeholder="http://link-to-photo" name="photo" ngModel/>
-      </div>
+    <div class="field">
+      <label>Species</label>
+      <input type="text" placeholder="Species" name="species" ngModel/>
+    </div>
 
-      <button type="submit" class="ui submit large grey button right floated">Submit</button>
+    <div class="field">
+      <label>Bio</label>
+      <textarea rows="4" cols="50" type="text" placeholder="Bio" name="bio" ngModel></textarea>
+    </div>
+
+    <div class="field">
+      <label>Photo Url</label>
+      <input type="text" placeholder="http://link-to-photo" name="photo" ngModel/>
+    </div>
+
+    <button type="submit" [disabled]="!jediForm.form.valid" class="ui submit large grey button right floated">Submit</button>
 
   </form>
 </div>
