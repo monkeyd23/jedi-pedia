@@ -25,6 +25,26 @@ function apiRouter (database) {
         });
     });
 
+    router.post('/jedi', (req, res) => {
+        const jedi = req.body;
+        const jedisCollection = database.collection('jedis');
+        jedisCollection.findOne(jedi, (err, docs) => {
+            if (err)
+                return res.status(500).json({"error" : err});
+            return res.status(200).json(docs);
+        });
+    });
+
+    router.post('/updatejedi', (req, res) => {
+        const jedisCollection = database.collection('jedis');
+        delete req.body.newvalue._id;
+        jedisCollection.updateOne(req.body.query, {$set: req.body.newvalue}, (err, docs) => {
+            if (err)
+                return res.status(500).json({"error" : err});
+            return res.status(200).json(docs);
+        });
+    });
+
     router.post('/jedis', (req, res) => {
         const jedi = req.body;
         const jedisCollection = database.collection('jedis');

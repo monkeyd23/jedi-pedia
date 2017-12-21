@@ -13,6 +13,9 @@ import { ApiService } from './shared/api.service';
 import { AuthService } from './shared/auth.service';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './auth.guard';
+import { JediDetailComponent } from './jedi-detail/jedi-detail.component';
+import { EditJediComponent } from './edit-jedi/edit-jedi.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,13 +24,16 @@ import { AuthGuard } from './auth.guard';
     JediListComponent,
     JediComponent,
     AddJediComponent,
-    LoginComponent
+    LoginComponent,
+    JediDetailComponent,
+    EditJediComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [
     ApiService,

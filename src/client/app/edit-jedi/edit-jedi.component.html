@@ -1,0 +1,37 @@
+<div class="edit-form-container">
+
+<form *ngIf="jediForm" class="ui big form" [formGroup]="jediForm"  (ngSubmit)="updateJedi()" novalidate>
+  <div class="field">
+    <label>Name</label>
+    <input type="text" placeholder="Jedi Name" class="form-control" formControlName="name"/>
+  </div>
+
+  <div class="field">
+    <label>Rank</label>
+    <input type="text" placeholder="Rank" class="form-control" formControlName="rank"/>
+  </div>
+
+  <div class="field">
+    <label>Trained By</label>
+    <input type="text" placeholder="Trained By" class="form-control" formControlName="trainedBy"/>
+  </div>
+
+  <div class="field">
+    <label>Species</label>
+    <input type="text" placeholder="Species" class="form-control" formControlName="species"/>
+  </div>
+
+  <div class="field">
+    <label>Bio</label>
+    <textarea rows="4" cols="50" type="text" placeholder="Bio" class="form-control" formControlName="bio"></textarea>
+  </div>
+
+  <div class="field">
+    <label>Photo Url</label>
+    <input type="text" placeholder="http://link-to-photo" class="form-control" formControlName="photoUrl"/>
+  </div>
+
+  <button type="submit" class="ui submit large grey button right floated">Submit</button>
+
+</form>
+</div>

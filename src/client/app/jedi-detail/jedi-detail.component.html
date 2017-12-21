@@ -1,0 +1,23 @@
+<div class="" *ngIf="jedi">
+  <div class="portfoliocard">
+    <div class="coverphoto"></div>
+    <div class="profile_picture">
+      <img src="{{jedi?.photoUrl}}">
+    </div>
+    <div class="left_col">
+    </div>
+    <div class="right_col">
+      <h2 class="name">{{jedi.name}}</h2>
+      <button class="ui primary button right" routerLink="/edit/{{jedi.name}}"><i class="edit icon"></i>Edit</button>
+      <h3 class="location">{{jedi.rank}}</h3>
+      <ul class="contact_information">
+        <li class="work">Species - {{jedi.species}}</li>
+        <li class="website" routerLink="/detail/{{jedi.trainedBy}}">Trained by - {{jedi.trainedBy}}</li>
+        <li class="mail">
+          <h3>Bio</h3>
+          <p>{{jedi.bio}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
